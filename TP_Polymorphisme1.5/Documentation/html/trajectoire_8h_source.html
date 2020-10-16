@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Robot mobile:  Fichier source de trajectoire.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Robot mobile
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">TP_polymorphisme</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('trajectoire_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">trajectoire.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="trajectoire_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef TRAJECTOIRE_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define TRAJECTOIRE_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="element_8h.html">element.h</a>&quot;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;iomanip&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_trajectoire.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_trajectoire.html">Trajectoire</a></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_trajectoire.html#a62cc9d5c52215094c7f0731e07cccbf5">   13</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_trajectoire.html#a62cc9d5c52215094c7f0731e07cccbf5">nbEtapesMax</a>;</div><div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_trajectoire.html#a56fb38e337100dcbc3c49727d8f68c6a">   14</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_trajectoire.html#a56fb38e337100dcbc3c49727d8f68c6a">prochaineEtape</a>;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="comment">//Element **parcours;</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="comment">//parcours = new (Element*[_pElement]);</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_trajectoire.html#a0703f0b87651b76f1e8744c9a3872205">Trajectoire</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> _nbEtapesMax);</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="class_trajectoire.html#a9249a7bd01726684494eeea9fde54b9e">~Trajectoire</a>();</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_trajectoire.html#a12ae44f39805bb480c2f8bf3454ea342">Ajouter</a>(<span class="keyword">const</span> <a class="code" href="class_element.html">Element</a> *_pElement);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_trajectoire.html#ab2ab026cbcf416f397ff6ee7f8331cc4">Afficher</a>();</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;};</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#endif // TRAJECTOIRE_H</span></div><div class="ttc" id="class_element_html"><div class="ttname"><a href="class_element.html">Element</a></div><div class="ttdef"><b>Definition:</b> element.h:9</div></div>
+<div class="ttc" id="element_8h_html"><div class="ttname"><a href="element_8h.html">element.h</a></div></div>
+<div class="ttc" id="class_trajectoire_html_a56fb38e337100dcbc3c49727d8f68c6a"><div class="ttname"><a href="class_trajectoire.html#a56fb38e337100dcbc3c49727d8f68c6a">Trajectoire::prochaineEtape</a></div><div class="ttdeci">int prochaineEtape</div><div class="ttdef"><b>Definition:</b> trajectoire.h:14</div></div>
+<div class="ttc" id="class_trajectoire_html_a9249a7bd01726684494eeea9fde54b9e"><div class="ttname"><a href="class_trajectoire.html#a9249a7bd01726684494eeea9fde54b9e">Trajectoire::~Trajectoire</a></div><div class="ttdeci">~Trajectoire()</div><div class="ttdef"><b>Definition:</b> trajectoire.cpp:11</div></div>
+<div class="ttc" id="class_trajectoire_html_a62cc9d5c52215094c7f0731e07cccbf5"><div class="ttname"><a href="class_trajectoire.html#a62cc9d5c52215094c7f0731e07cccbf5">Trajectoire::nbEtapesMax</a></div><div class="ttdeci">int nbEtapesMax</div><div class="ttdef"><b>Definition:</b> trajectoire.h:13</div></div>
+<div class="ttc" id="class_trajectoire_html"><div class="ttname"><a href="class_trajectoire.html">Trajectoire</a></div><div class="ttdef"><b>Definition:</b> trajectoire.h:10</div></div>
+<div class="ttc" id="class_trajectoire_html_a12ae44f39805bb480c2f8bf3454ea342"><div class="ttname"><a href="class_trajectoire.html#a12ae44f39805bb480c2f8bf3454ea342">Trajectoire::Ajouter</a></div><div class="ttdeci">bool Ajouter(const Element *_pElement)</div><div class="ttdef"><b>Definition:</b> trajectoire.cpp:16</div></div>
+<div class="ttc" id="class_trajectoire_html_a0703f0b87651b76f1e8744c9a3872205"><div class="ttname"><a href="class_trajectoire.html#a0703f0b87651b76f1e8744c9a3872205">Trajectoire::Trajectoire</a></div><div class="ttdeci">Trajectoire(const int _nbEtapesMax)</div><div class="ttdef"><b>Definition:</b> trajectoire.cpp:5</div></div>
+<div class="ttc" id="class_trajectoire_html_ab2ab026cbcf416f397ff6ee7f8331cc4"><div class="ttname"><a href="class_trajectoire.html#ab2ab026cbcf416f397ff6ee7f8331cc4">Trajectoire::Afficher</a></div><div class="ttdeci">void Afficher()</div><div class="ttdef"><b>Definition:</b> trajectoire.cpp:21</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="trajectoire_8h.html">trajectoire.h</a></li>
+    <li class="footer">Généré par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>
